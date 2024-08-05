@@ -169,7 +169,71 @@ main {
   color: gray;
 }
 
+.technology-footer {
+  display: flex;
+  position: relative;
+  width: auto;
+  margin-top: -200px;
+  align-items: center;
+}
+
+.chessboard {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  margin: 0 auto;
+}
+.cell {
+  width: 80px;
+  height: 80px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.cell.linux {
+  background-image: url('/assets/img/linux-96.png');
+  background-size: cover;
+}
+
+.cell.gopher {
+  background-image: url('/assets/img/gopher.png');
+  background-size: cover;
+}
+
+.cell.kubernetes {
+  background-image: url('/assets/img/kubernetes-96.png');
+  background-size: cover;
+}
+
+.cell.gitlab {
+  background-image: url('/assets/img/gitlab-96.png');
+  background-size: cover;
+}
+
+.cell.rails {
+  background-image: url('/assets/img/rails-96.png');
+  background-size: cover;
+}
+
+.cell.php {
+  background-image: url('/assets/img/php-80.png');
+  background-size: cover;
+}
+
+.cell.python {
+  background-image: url('/assets/img/python-96.png');
+  background-size: cover;
+}
+
+.cell.ruby {
+  background-image: url('/assets/img/ruby-96.png');
+  background-size: cover;
+}
+
 @media screen and (max-width: 650px) {
+  .chessboard {
+    display: none;
+  }
+
   .content {
     flex-direction: column;
     width: max-content;
